@@ -9,16 +9,17 @@
 /* Begin PBXBuildFile section */
 		33BE1A35D6833FF403C7430B /* Pods_MovieSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829920F558E47F64EB6BD219 /* Pods_MovieSearchTests.framework */; };
 		37C4AC25CB106A0510B84489 /* Pods_MovieSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE24DBA44402A9682332D6A /* Pods_MovieSearchUITests.framework */; };
+		472B116221051991002B8F41 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 472B116021051990002B8F41 /* Info.plist */; };
+		472B116321051991002B8F41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472B116121051991002B8F41 /* Assets.xcassets */; };
+		472B116521051F56002B8F41 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B116421051F56002B8F41 /* Constants.swift */; };
 		47839E6A2105176300976A77 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47839E692105176300976A77 /* ViewControllerExtension.swift */; };
 		478A6E2C21050FDD00CA3144 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478A6E2B21050FDD00CA3144 /* AppDelegate.swift */; };
 		478A6E2E21050FDD00CA3144 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478A6E2D21050FDD00CA3144 /* ViewController.swift */; };
 		478A6E3121050FDD00CA3144 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 478A6E2F21050FDD00CA3144 /* Main.storyboard */; };
 		478A6E3421050FDE00CA3144 /* MovieSearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 478A6E3221050FDE00CA3144 /* MovieSearch.xcdatamodeld */; };
-		478A6E3621050FDF00CA3144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 478A6E3521050FDF00CA3144 /* Assets.xcassets */; };
 		478A6E3921050FDF00CA3144 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 478A6E3721050FDF00CA3144 /* LaunchScreen.storyboard */; };
 		478A6E4421050FDF00CA3144 /* MovieSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478A6E4321050FDF00CA3144 /* MovieSearchTests.swift */; };
 		478A6E4F21050FDF00CA3144 /* MovieSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478A6E4E21050FDF00CA3144 /* MovieSearchUITests.swift */; };
-		47A28C5B210518A20017547A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A28C5A210518A20017547A /* Default-568h@2x.png */; };
 		4F0557A7484D4A33A3F5CC70 /* Pods_MovieSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693DC7ADABBD438377611CA2 /* Pods_MovieSearch.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,22 +45,22 @@
 		18442E64D51316FBFB1F68F7 /* Pods-MovieSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieSearch/Pods-MovieSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		2C09CFE4C3EE23F42292D35B /* Pods-MovieSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieSearchUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieSearchUITests/Pods-MovieSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		39D6DE98E78433F9A4995D21 /* Pods-MovieSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieSearchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieSearchUITests/Pods-MovieSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		472B116021051990002B8F41 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		472B116121051991002B8F41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		472B116421051F56002B8F41 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		47839E692105176300976A77 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		478A6E2821050FDD00CA3144 /* MovieSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		478A6E2B21050FDD00CA3144 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		478A6E2D21050FDD00CA3144 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		478A6E3021050FDD00CA3144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		478A6E3321050FDE00CA3144 /* MovieSearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieSearch.xcdatamodel; sourceTree = "<group>"; };
-		478A6E3521050FDF00CA3144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		478A6E3821050FDF00CA3144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		478A6E3A21050FDF00CA3144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		478A6E3F21050FDF00CA3144 /* MovieSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		478A6E4321050FDF00CA3144 /* MovieSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchTests.swift; sourceTree = "<group>"; };
 		478A6E4521050FDF00CA3144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		478A6E4A21050FDF00CA3144 /* MovieSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		478A6E4E21050FDF00CA3144 /* MovieSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchUITests.swift; sourceTree = "<group>"; };
 		478A6E5021050FDF00CA3144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47A28C5A210518A20017547A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		693DC7ADABBD438377611CA2 /* Pods_MovieSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		829920F558E47F64EB6BD219 /* Pods_MovieSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87626F24C7FCCD7436B50804 /* Pods-MovieSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieSearch/Pods-MovieSearch.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,7 +107,6 @@
 		478A6E1F21050FDD00CA3144 = {
 			isa = PBXGroup;
 			children = (
-				47A28C5A210518A20017547A /* Default-568h@2x.png */,
 				478A6E2A21050FDD00CA3144 /* MovieSearch */,
 				478A6E4221050FDF00CA3144 /* MovieSearchTests */,
 				478A6E4D21050FDF00CA3144 /* MovieSearchUITests */,
@@ -130,10 +130,11 @@
 			isa = PBXGroup;
 			children = (
 				47839E682105173D00976A77 /* Extensions */,
-				478A6E5F2105101000CA3144 /* Support */,
 				478A6E5E21050FFD00CA3144 /* Controller */,
 				478A6E5D21050FF400CA3144 /* View */,
 				478A6E5C21050FED00CA3144 /* Model */,
+				472B116121051991002B8F41 /* Assets.xcassets */,
+				472B116021051990002B8F41 /* Info.plist */,
 			);
 			path = MovieSearch;
 			sourceTree = "<group>";
@@ -160,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				478A6E3221050FDE00CA3144 /* MovieSearch.xcdatamodeld */,
+				472B116421051F56002B8F41 /* Constants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -180,15 +182,6 @@
 				478A6E2D21050FDD00CA3144 /* ViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		478A6E5F2105101000CA3144 /* Support */ = {
-			isa = PBXGroup;
-			children = (
-				478A6E3A21050FDF00CA3144 /* Info.plist */,
-				478A6E3521050FDF00CA3144 /* Assets.xcassets */,
-			);
-			path = Support;
 			sourceTree = "<group>";
 		};
 		58A2BF0E43E769D0EF27BA10 /* Frameworks */ = {
@@ -322,10 +315,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				472B116221051991002B8F41 /* Info.plist in Resources */,
 				478A6E3921050FDF00CA3144 /* LaunchScreen.storyboard in Resources */,
-				47A28C5B210518A20017547A /* Default-568h@2x.png in Resources */,
-				478A6E3621050FDF00CA3144 /* Assets.xcassets in Resources */,
 				478A6E3121050FDD00CA3144 /* Main.storyboard in Resources */,
+				472B116321051991002B8F41 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				472B116521051F56002B8F41 /* Constants.swift in Sources */,
 				47839E6A2105176300976A77 /* ViewControllerExtension.swift in Sources */,
 				478A6E2E21050FDD00CA3144 /* ViewController.swift in Sources */,
 				478A6E3421050FDE00CA3144 /* MovieSearch.xcdatamodeld in Sources */,
@@ -610,7 +604,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TGW3A2N842;
-				INFOPLIST_FILE = "$(SRCROOT)/MovieSearch/Support/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MovieSearch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -629,7 +623,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TGW3A2N842;
-				INFOPLIST_FILE = "$(SRCROOT)/MovieSearch/Support/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MovieSearch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

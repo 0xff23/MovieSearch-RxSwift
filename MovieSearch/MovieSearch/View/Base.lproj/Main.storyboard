@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="teO-bi-g09">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="teO-bi-g09">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jjO-Ko-nU3">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" id="E0P-GG-jxf">
@@ -36,17 +36,30 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="YjK-bH-LOQ"/>
                                 </connections>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="7px-6C-Na0">
+                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="wpz-EG-TC5"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="jjO-Ko-nU3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6gp-5d-wB0"/>
-                            <constraint firstItem="jjO-Ko-nU3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="913-D4-aA6"/>
-                            <constraint firstItem="jjO-Ko-nU3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RMd-ZP-hGV"/>
-                            <constraint firstItem="jjO-Ko-nU3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dVk-aM-MiN"/>
+                            <constraint firstItem="jjO-Ko-nU3" firstAttribute="top" secondItem="7px-6C-Na0" secondAttribute="bottom" id="3cw-0h-zXU"/>
+                            <constraint firstItem="7px-6C-Na0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BCv-dV-rIx"/>
+                            <constraint firstItem="jjO-Ko-nU3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L9P-BF-8Q0"/>
+                            <constraint firstItem="7px-6C-Na0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="P2D-C1-wTW"/>
+                            <constraint firstItem="jjO-Ko-nU3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="S6G-39-l8c"/>
+                            <constraint firstItem="jjO-Ko-nU3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ufu-1k-qfF"/>
+                            <constraint firstItem="7px-6C-Na0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aTh-0d-HmT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Movies" id="YUR-S6-QFp"/>
+                    <connections>
+                        <outlet property="movieSearch" destination="7px-6C-Na0" id="P7H-rZ-obv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -18,7 +18,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell")
         cell?.textLabel?.text = movies[indexPath.row]
-        
+
         return cell!
     }
     
