@@ -15,6 +15,12 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         return movies.count
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedMovie = movies[indexPath.row]
+        
+        ref.child(Constants.folderName).childByAutoId().setValue(["movie-title":selectedMovie]) // Save selected movie into firebase
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell")
         cell?.textLabel?.text = movies[indexPath.row]

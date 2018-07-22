@@ -10,6 +10,8 @@ target 'MovieSearch' do
   pod 'RxCocoa','~> 4.0'
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
 
   target 'MovieSearchTests' do
     inherit! :search_paths

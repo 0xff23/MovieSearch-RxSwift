@@ -11,16 +11,24 @@ import RxCocoa
 import RxSwift
 import Alamofire
 import SwiftyJSON
+import Firebase
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var movieSearch: UISearchBar!
     
-    var movies = [String]()
+    var movies = [String]() {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
+    var ref: DatabaseReference!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ref = Database.database().reference()
         
         movieSearch.rx.text
             .orEmpty // To check if something is in response
@@ -41,7 +49,6 @@ class ViewController: UIViewController {
                             }
                         }
                     }
-                    self.tableView.reloadData()
                 })
             })
    }
