@@ -9,12 +9,15 @@
 import UIKit
 import RxCocoa
 import RxSwift
+import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var movieSearch: UISearchBar!
     
-    let movies = ["Split", "Star Wars", "Shrek"]
+    var movies = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,10 +28,22 @@ class ViewController: UIViewController {
             .filter{ !$0.isEmpty }
             .throttle(0.5, scheduler: MainScheduler.instance)
             .subscribe(onNext: { query in
-                let url = "http://img.omdbapi.com/?apikey=[yourkey]&" + query
+                let url = "https://www.omdbapi.com/?apikey=" + Constants.omdbKey + "&s=" + query
+                
+                Alamofire.request(url).responseJSON(completionHandler: { response in
+                    if let value = response.result.value {
+                        let json = JSON(value)
+                        self.movies.removeAll() // Clear array before every search
+                        
+                        for movie in json["Search"] {
+                            if let title = movie.1["Title"].string {
+                                self.movies.append(title)
+                            }
+                        }
+                    }
+                    self.tableView.reloadData()
+                })
             })
    }
-
-
 }
 
