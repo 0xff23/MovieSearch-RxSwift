@@ -1,7 +1,6 @@
 # Movie Search - RxSwift
-RxSwift
 
-### Swift 4
+## Swift 4, Xcode 10
 
 ### API:
 - http://www.omdbapi.com/
