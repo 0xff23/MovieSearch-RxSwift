@@ -12,11 +12,13 @@ import Firebase
 class FavoriteViewController: UIViewController {
     
     var ref: DatabaseReference!
+    
     var favoriteMovies = [String]() {
         didSet {
             self.tableView.reloadData()
         }
     }
+    var movieKeys = [String]()
     
     @IBOutlet weak var tableView: UITableView!
     

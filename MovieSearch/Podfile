@@ -12,6 +12,7 @@ target 'MovieSearch' do
   pod 'SwiftyJSON'
   pod 'Firebase/Core'
   pod 'Firebase/Database'
+  pod 'Firebase/Auth'
 
   target 'MovieSearchTests' do
     inherit! :search_paths

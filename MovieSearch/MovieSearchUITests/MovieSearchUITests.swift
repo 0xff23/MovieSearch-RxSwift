@@ -29,8 +29,11 @@ class MovieSearchUITests: XCTestCase {
     }
     
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        app.navigationBars["Movies"].buttons["Bookmarks"].tap()
+        app.navigationBars["Favorites"].buttons["Movies"].tap()
+        
     }
     
 }
